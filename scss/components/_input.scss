@@ -1,0 +1,54 @@
+.input {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+  }
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    border: 1px solid var(--color-secondary-normal);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.17;
+    background-color: transparent;
+
+    &:focus {
+      border-color: var(---color-primary-normal);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-secondary-normal);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+
+    &__control:focus::placeholder {
+      color: var(--color-primary-dark);
+    }
+  }
+}
+
+/* Change places for input and label in html */
+
+/* .form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-secondary-dark);
+  transition: transform 0.3s;
+} */
+
+/* .form-input:focus + .form-label {
+  transform: translate(-36px, -40px);
+} */
